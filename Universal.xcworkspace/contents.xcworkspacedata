@@ -7,4 +7,7 @@
    <FileRef
       location = "group:/Users/macbook/Desktop/2/Template/Project/Universal.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Project/Universal.xcodeproj">
+   </FileRef>
 </Workspace>
