@@ -1,0 +1,18 @@
+ [
+    {
+         "title":"WebView",
+         "provider":"webview",
+         "image": "https://unsplash.it/720/480?image=1073",
+         "arguments":[
+            "http://google.co.uk"
+         ]
+      },
+     {
+         "title":"WebView",
+         "provider":"webview",
+         "image": "https://unsplash.it/720/480?image=1073",
+         "arguments":[
+            "http://google.co.uk"
+         ]
+      }
+]
