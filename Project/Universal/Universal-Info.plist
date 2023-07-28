@@ -41,6 +41,10 @@
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We use this to capture image from camera.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We use this to captur audio from microphone.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>We use this to monitor phone calls and pause any media being played.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -62,7 +66,6 @@
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>audio</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
