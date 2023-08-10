@@ -154,17 +154,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GADInterstitialDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        if AppDelegate.BANNER_ADS_ON && !AppDelegate.hasPurchased() {
             
             if #available(iOS 14, *) {
                 ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
-                    // Tracking authorization completed. Start loading ads here.
-                    // loadAd()
+            switch status {
+            case .authorized:
+                // Tracking authorization dialog was shown
+                // and we are authorized
+                print("Authorized")
+            case .denied:
+                // Tracking authorization dialog was
+                // shown and permission is denied
+                print("Denied")
+            case .notDetermined:
+                // Tracking authorization dialog has not been shown
+                print("Not Determined")
+            case .restricted:
+                print("Restricted")
+            @unknown default:
+                print("Unknown")
+            }
                 })
             } else {
                 // Fallback on earlier versions
             }
-        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
