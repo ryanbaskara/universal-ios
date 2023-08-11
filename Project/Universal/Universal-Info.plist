@@ -42,9 +42,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>We use this to capture image from camera.</string>
+	<string>We require camera access to enable you to capture and share photos and videos seamlessly within the app. Your media may be uploaded to our server for storage and sharing purposes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>We use this to captur audio from microphone.</string>
+	<string>Microphone access is needed for voice interactions, audio recording, and chats within the app. Your audio data may be uploaded to our server for storage and sharing purposes.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>We use this to monitor phone calls and pause any media being played.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
